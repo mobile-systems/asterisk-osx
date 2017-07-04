@@ -1,0 +1,941 @@
+$ make
+   [CC] astcanary.c -> astcanary.o
+   [LD] astcanary.o -> astcanary
+   [CC] astdb2sqlite3.c -> astdb2sqlite3.o
+   [CC] hash/hash.c -> hash/hash.o
+   [CC] hash/hash_bigkey.c -> hash/hash_bigkey.o
+   [CC] hash/hash_buf.c -> hash/hash_buf.o
+   [CC] hash/hash_func.c -> hash/hash_func.o
+   [CC] hash/hash_log2.c -> hash/hash_log2.o
+   [CC] hash/hash_page.c -> hash/hash_page.o
+   [CC] hash/ndbm.c -> hash/ndbm.o
+   [CC] btree/bt_close.c -> btree/bt_close.o
+   [CC] btree/bt_conv.c -> btree/bt_conv.o
+   [CC] btree/bt_debug.c -> btree/bt_debug.o
+   [CC] btree/bt_delete.c -> btree/bt_delete.o
+   [CC] btree/bt_get.c -> btree/bt_get.o
+   [CC] btree/bt_open.c -> btree/bt_open.o
+   [CC] btree/bt_overflow.c -> btree/bt_overflow.o
+   [CC] btree/bt_page.c -> btree/bt_page.o
+   [CC] btree/bt_put.c -> btree/bt_put.o
+   [CC] btree/bt_search.c -> btree/bt_search.o
+   [CC] btree/bt_seq.c -> btree/bt_seq.o
+   [CC] btree/bt_split.c -> btree/bt_split.o
+   [CC] btree/bt_utils.c -> btree/bt_utils.o
+   [CC] db/db.c -> db/db.o
+   [CC] mpool/mpool.c -> mpool/mpool.o
+   [CC] recno/rec_close.c -> recno/rec_close.o
+   [CC] recno/rec_delete.c -> recno/rec_delete.o
+   [CC] recno/rec_get.c -> recno/rec_get.o
+   [CC] recno/rec_open.c -> recno/rec_open.o
+   [CC] recno/rec_put.c -> recno/rec_put.o
+   [CC] recno/rec_search.c -> recno/rec_search.o
+   [CC] recno/rec_seq.c -> recno/rec_seq.o
+   [CC] recno/rec_utils.c -> recno/rec_utils.o
+   [AR] hash/hash.o hash/hash_bigkey.o hash/hash_buf.o hash/hash_func.o hash/hash_log2.o hash/hash_page.o hash/ndbm.o btree/bt_close.o btree/bt_conv.o btree/bt_debug.o btree/bt_delete.o btree/bt_get.o btree/bt_open.o btree/bt_overflow.o btree/bt_page.o btree/bt_put.o btree/bt_search.o btree/bt_seq.o btree/bt_split.o btree/bt_utils.o db/db.o mpool/mpool.o recno/rec_close.o recno/rec_delete.o recno/rec_get.o recno/rec_open.o recno/rec_put.o recno/rec_search.o recno/rec_seq.o recno/rec_utils.o -> libdb1.a
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libdb1.a(bt_debug.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libdb1.a(bt_debug.o) has no symbols
+   [LD] astdb2sqlite3.o db1-ast/libdb1.a -> astdb2sqlite3
+   [CC] astdb2bdb.c -> astdb2bdb.o
+   [LD] astdb2bdb.o db1-ast/libdb1.a -> astdb2bdb
+   [CC] chan_bridge_media.c -> chan_bridge_media.o
+   [LD] chan_bridge_media.o -> chan_bridge_media.so
+   [CC] chan_iax2.c -> chan_iax2.o
+   [CC] iax2/codec_pref.c -> iax2/codec_pref.o
+   [CC] iax2/firmware.c -> iax2/firmware.o
+   [CC] iax2/format_compatibility.c -> iax2/format_compatibility.o
+   [CC] iax2/parser.c -> iax2/parser.o
+   [CC] iax2/provision.c -> iax2/provision.o
+   [LD] chan_iax2.o iax2/codec_pref.o iax2/firmware.o iax2/format_compatibility.o iax2/parser.o iax2/provision.o -> chan_iax2.so
+   [CC] chan_mgcp.c -> chan_mgcp.o
+   [LD] chan_mgcp.o -> chan_mgcp.so
+   [CC] chan_rtp.c -> chan_rtp.o
+   [LD] chan_rtp.o -> chan_rtp.so
+   [CC] chan_sip.c -> chan_sip.o
+   [CC] sip/config_parser.c -> sip/config_parser.o
+   [CC] sip/dialplan_functions.c -> sip/dialplan_functions.o
+   [CC] sip/reqresp_parser.c -> sip/reqresp_parser.o
+   [CC] sip/route.c -> sip/route.o
+   [CC] sip/security_events.c -> sip/security_events.o
+   [CC] sip/utils.c -> sip/utils.o
+   [LD] chan_sip.o sip/config_parser.o sip/dialplan_functions.o sip/reqresp_parser.o sip/route.o sip/security_events.o sip/utils.o -> chan_sip.so
+   [CC] chan_skinny.c -> chan_skinny.o
+   [LD] chan_skinny.o -> chan_skinny.so
+   [CC] chan_unistim.c -> chan_unistim.o
+   [LD] chan_unistim.o -> chan_unistim.so
+   [CC] pbx_ael.c -> pbx_ael.o
+   [LD] pbx_ael.o -> pbx_ael.so
+   [CC] pbx_config.c -> pbx_config.o
+   [LD] pbx_config.o -> pbx_config.so
+   [CC] pbx_dundi.c -> pbx_dundi.o
+   [CC] dundi-parser.c -> dundi-parser.o
+   [LD] pbx_dundi.o dundi-parser.o -> pbx_dundi.so
+   [CC] pbx_loopback.c -> pbx_loopback.o
+   [LD] pbx_loopback.o -> pbx_loopback.so
+   [CC] pbx_realtime.c -> pbx_realtime.o
+   [LD] pbx_realtime.o -> pbx_realtime.so
+   [CC] pbx_spool.c -> pbx_spool.o
+   [LD] pbx_spool.o -> pbx_spool.so
+   [CC] app_adsiprog.c -> app_adsiprog.o
+app_adsiprog.c:1114:28: warning: implicit conversion from 'int' to 'char' changes value from 128 to -128 [-Wconstant-conversion]
+                        state->key->retstr[0] = 128;
+                                              ~ ^~~
+app_adsiprog.c:1150:26: warning: implicit conversion from 'int' to 'char' changes value from 130 to -126 [-Wconstant-conversion]
+                        state->sub->data[0] = 130;
+                                            ~ ^~~
+app_adsiprog.c:1267:20: warning: implicit conversion from 'int' to 'char' changes value from 129 to -127 [-Wconstant-conversion]
+                        disp->data[0] = 129;
+                                      ~ ^~~
+3 warnings generated.
+   [LD] app_adsiprog.o -> app_adsiprog.so
+   [CC] app_agent_pool.c -> app_agent_pool.o
+   [LD] app_agent_pool.o -> app_agent_pool.so
+   [CC] app_alarmreceiver.c -> app_alarmreceiver.o
+   [LD] app_alarmreceiver.o -> app_alarmreceiver.so
+   [CC] app_amd.c -> app_amd.o
+   [LD] app_amd.o -> app_amd.so
+   [CC] app_authenticate.c -> app_authenticate.o
+   [LD] app_authenticate.o -> app_authenticate.so
+   [CC] app_bridgewait.c -> app_bridgewait.o
+   [LD] app_bridgewait.o -> app_bridgewait.so
+   [CC] app_cdr.c -> app_cdr.o
+   [LD] app_cdr.o -> app_cdr.so
+   [CC] app_celgenuserevent.c -> app_celgenuserevent.o
+   [LD] app_celgenuserevent.o -> app_celgenuserevent.so
+   [CC] app_chanisavail.c -> app_chanisavail.o
+   [LD] app_chanisavail.o -> app_chanisavail.so
+   [CC] app_channelredirect.c -> app_channelredirect.o
+   [LD] app_channelredirect.o -> app_channelredirect.so
+   [CC] app_chanspy.c -> app_chanspy.o
+   [LD] app_chanspy.o -> app_chanspy.so
+   [CC] app_confbridge.c -> app_confbridge.o
+   [CC] confbridge/conf_chan_announce.c -> confbridge/conf_chan_announce.o
+   [CC] confbridge/conf_chan_record.c -> confbridge/conf_chan_record.o
+   [CC] confbridge/conf_config_parser.c -> confbridge/conf_config_parser.o
+   [CC] confbridge/conf_state.c -> confbridge/conf_state.o
+   [CC] confbridge/conf_state_empty.c -> confbridge/conf_state_empty.o
+   [CC] confbridge/conf_state_inactive.c -> confbridge/conf_state_inactive.o
+   [CC] confbridge/conf_state_multi.c -> confbridge/conf_state_multi.o
+   [CC] confbridge/conf_state_multi_marked.c -> confbridge/conf_state_multi_marked.o
+   [CC] confbridge/conf_state_single.c -> confbridge/conf_state_single.o
+   [CC] confbridge/conf_state_single_marked.c -> confbridge/conf_state_single_marked.o
+   [CC] confbridge/confbridge_manager.c -> confbridge/confbridge_manager.o
+   [LD] app_confbridge.o confbridge/conf_chan_announce.o confbridge/conf_chan_record.o confbridge/conf_config_parser.o confbridge/conf_state.o confbridge/conf_state_empty.o confbridge/conf_state_inactive.o confbridge/conf_state_multi.o confbridge/conf_state_multi_marked.o confbridge/conf_state_single.o confbridge/conf_state_single_marked.o confbridge/confbridge_manager.o -> app_confbridge.so
+   [CC] app_controlplayback.c -> app_controlplayback.o
+   [LD] app_controlplayback.o -> app_controlplayback.so
+   [CC] app_db.c -> app_db.o
+   [LD] app_db.o -> app_db.so
+   [CC] app_dial.c -> app_dial.o
+   [LD] app_dial.o -> app_dial.so
+   [CC] app_dictate.c -> app_dictate.o
+   [LD] app_dictate.o -> app_dictate.so
+   [CC] app_directed_pickup.c -> app_directed_pickup.o
+   [LD] app_directed_pickup.o -> app_directed_pickup.so
+   [CC] app_directory.c -> app_directory.o
+   [LD] app_directory.o -> app_directory.so
+   [CC] app_disa.c -> app_disa.o
+   [LD] app_disa.o -> app_disa.so
+   [CC] app_dumpchan.c -> app_dumpchan.o
+   [LD] app_dumpchan.o -> app_dumpchan.so
+   [CC] app_echo.c -> app_echo.o
+   [LD] app_echo.o -> app_echo.so
+   [CC] app_exec.c -> app_exec.o
+   [LD] app_exec.o -> app_exec.so
+   [CC] app_externalivr.c -> app_externalivr.o
+   [LD] app_externalivr.o -> app_externalivr.so
+   [CC] app_festival.c -> app_festival.o
+   [LD] app_festival.o -> app_festival.so
+   [CC] app_followme.c -> app_followme.o
+   [LD] app_followme.o -> app_followme.so
+   [CC] app_forkcdr.c -> app_forkcdr.o
+   [LD] app_forkcdr.o -> app_forkcdr.so
+   [CC] app_getcpeid.c -> app_getcpeid.o
+   [LD] app_getcpeid.o -> app_getcpeid.so
+   [CC] app_ices.c -> app_ices.o
+   [LD] app_ices.o -> app_ices.so
+   [CC] app_image.c -> app_image.o
+   [LD] app_image.o -> app_image.so
+   [CC] app_macro.c -> app_macro.o
+   [LD] app_macro.o -> app_macro.so
+   [CC] app_milliwatt.c -> app_milliwatt.o
+   [LD] app_milliwatt.o -> app_milliwatt.so
+   [CC] app_minivm.c -> app_minivm.o
+   [LD] app_minivm.o -> app_minivm.so
+   [CC] app_mixmonitor.c -> app_mixmonitor.o
+   [LD] app_mixmonitor.o -> app_mixmonitor.so
+   [CC] app_morsecode.c -> app_morsecode.o
+   [LD] app_morsecode.o -> app_morsecode.so
+   [CC] app_mp3.c -> app_mp3.o
+   [LD] app_mp3.o -> app_mp3.so
+   [CC] app_nbscat.c -> app_nbscat.o
+   [LD] app_nbscat.o -> app_nbscat.so
+   [CC] app_originate.c -> app_originate.o
+   [LD] app_originate.o -> app_originate.so
+   [CC] app_page.c -> app_page.o
+   [LD] app_page.o -> app_page.so
+   [CC] app_playback.c -> app_playback.o
+   [LD] app_playback.o -> app_playback.so
+   [CC] app_playtones.c -> app_playtones.o
+   [LD] app_playtones.o -> app_playtones.so
+   [CC] app_privacy.c -> app_privacy.o
+   [LD] app_privacy.o -> app_privacy.so
+   [CC] app_queue.c -> app_queue.o
+   [LD] app_queue.o -> app_queue.so
+   [CC] app_read.c -> app_read.o
+   [LD] app_read.o -> app_read.so
+   [CC] app_readexten.c -> app_readexten.o
+   [LD] app_readexten.o -> app_readexten.so
+   [CC] app_record.c -> app_record.o
+   [LD] app_record.o -> app_record.so
+   [CC] app_sayunixtime.c -> app_sayunixtime.o
+   [LD] app_sayunixtime.o -> app_sayunixtime.so
+   [CC] app_senddtmf.c -> app_senddtmf.o
+   [LD] app_senddtmf.o -> app_senddtmf.so
+   [CC] app_sendtext.c -> app_sendtext.o
+   [LD] app_sendtext.o -> app_sendtext.so
+   [CC] app_sms.c -> app_sms.o
+app_sms.c:804:12: warning: implicit conversion from 'int' to 'char' changes value from 191 to -65 [-Wconstant-conversion]
+                                *p++ = 191;
+                                     ~ ^~~
+1 warning generated.
+   [LD] app_sms.o -> app_sms.so
+   [CC] app_softhangup.c -> app_softhangup.o
+   [LD] app_softhangup.o -> app_softhangup.so
+   [CC] app_speech_utils.c -> app_speech_utils.o
+   [LD] app_speech_utils.o -> app_speech_utils.so
+   [CC] app_stack.c -> app_stack.o
+   [LD] app_stack.o -> app_stack.so
+   [CC] app_stasis.c -> app_stasis.o
+   [LD] app_stasis.o -> app_stasis.so
+   [CC] app_system.c -> app_system.o
+   [LD] app_system.o -> app_system.so
+   [CC] app_talkdetect.c -> app_talkdetect.o
+   [LD] app_talkdetect.o -> app_talkdetect.so
+   [CC] app_test.c -> app_test.o
+   [LD] app_test.o -> app_test.so
+   [CC] app_transfer.c -> app_transfer.o
+   [LD] app_transfer.o -> app_transfer.so
+   [CC] app_url.c -> app_url.o
+   [LD] app_url.o -> app_url.so
+   [CC] app_userevent.c -> app_userevent.o
+   [LD] app_userevent.o -> app_userevent.so
+   [CC] app_verbose.c -> app_verbose.o
+   [LD] app_verbose.o -> app_verbose.so
+   [CC] app_voicemail.c -> app_voicemail.o
+   [LD] app_voicemail.o -> app_voicemail.so
+   [CC] app_waitforring.c -> app_waitforring.o
+   [LD] app_waitforring.o -> app_waitforring.so
+   [CC] app_waitforsilence.c -> app_waitforsilence.o
+   [LD] app_waitforsilence.o -> app_waitforsilence.so
+   [CC] app_waituntil.c -> app_waituntil.o
+   [LD] app_waituntil.o -> app_waituntil.so
+   [CC] app_while.c -> app_while.o
+   [LD] app_while.o -> app_while.so
+   [CC] app_zapateller.c -> app_zapateller.o
+   [LD] app_zapateller.o -> app_zapateller.so
+   [CC] src/add.c -> src/add.o
+   [CC] src/code.c -> src/code.o
+   [CC] src/debug.c -> src/debug.o
+   [CC] src/decode.c -> src/decode.o
+   [CC] src/long_term.c -> src/long_term.o
+   [CC] src/lpc.c -> src/lpc.o
+   [CC] src/preprocess.c -> src/preprocess.o
+   [CC] src/rpe.c -> src/rpe.o
+   [CC] src/gsm_destroy.c -> src/gsm_destroy.o
+   [CC] src/gsm_decode.c -> src/gsm_decode.o
+   [CC] src/gsm_encode.c -> src/gsm_encode.o
+   [CC] src/gsm_explode.c -> src/gsm_explode.o
+   [CC] src/gsm_implode.c -> src/gsm_implode.o
+   [CC] src/gsm_create.c -> src/gsm_create.o
+   [CC] src/gsm_print.c -> src/gsm_print.o
+   [CC] src/gsm_option.c -> src/gsm_option.o
+   [CC] src/short_term.c -> src/short_term.o
+src/short_term.c:67:2: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+        STEP(  -2560,  -16,  13107 );
+        ^      ~~~~~
+src/short_term.c:60:32: note: expanded from macro 'STEP'
+                temp1    = GSM_SUB( temp1, B << 1 );            \
+                                           ~ ^
+src/short_term.c:70:2: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+        STEP(  -1792,   -8,  17476 );
+        ^      ~~~~~
+src/short_term.c:60:32: note: expanded from macro 'STEP'
+                temp1    = GSM_SUB( temp1, B << 1 );            \
+                                           ~ ^
+src/short_term.c:71:2: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+        STEP(   -341,   -4,  31454 );
+        ^       ~~~~
+src/short_term.c:60:32: note: expanded from macro 'STEP'
+                temp1    = GSM_SUB( temp1, B << 1 );            \
+                                           ~ ^
+src/short_term.c:72:2: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+        STEP(  -1144,   -4,  29708 );
+        ^      ~~~~~
+src/short_term.c:60:32: note: expanded from macro 'STEP'
+                temp1    = GSM_SUB( temp1, B << 1 );            \
+                                           ~ ^
+4 warnings generated.
+   [CC] src/table.c -> src/table.o
+   [AR] src/add.o src/code.o src/debug.o src/decode.o src/long_term.o src/lpc.o src/preprocess.o src/rpe.o src/gsm_destroy.o src/gsm_decode.o src/gsm_encode.o src/gsm_explode.o src/gsm_implode.o src/gsm_create.o src/gsm_print.o src/gsm_option.o src/short_term.o src/table.o -> lib/libgsm.a
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: lib/libgsm.a(debug.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: lib/libgsm.a(debug.o) has no symbols
+   [CC] anaFilter.c -> anaFilter.o
+   [CC] constants.c -> constants.o
+   [CC] createCB.c -> createCB.o
+   [CC] doCPLC.c -> doCPLC.o
+   [CC] enhancer.c -> enhancer.o
+   [CC] filter.c -> filter.o
+   [CC] FrameClassify.c -> FrameClassify.o
+   [CC] gainquant.c -> gainquant.o
+   [CC] getCBvec.c -> getCBvec.o
+   [CC] helpfun.c -> helpfun.o
+   [CC] hpInput.c -> hpInput.o
+   [CC] hpOutput.c -> hpOutput.o
+   [CC] iCBConstruct.c -> iCBConstruct.o
+   [CC] iCBSearch.c -> iCBSearch.o
+   [CC] iLBC_decode.c -> iLBC_decode.o
+   [CC] iLBC_encode.c -> iLBC_encode.o
+   [CC] iLBC_test.c -> iLBC_test.o
+   [CC] LPCdecode.c -> LPCdecode.o
+   [CC] LPCencode.c -> LPCencode.o
+   [CC] lsf.c -> lsf.o
+   [CC] packing.c -> packing.o
+   [CC] StateConstructW.c -> StateConstructW.o
+   [CC] StateSearchW.c -> StateSearchW.o
+   [CC] syntFilter.c -> syntFilter.o
+   [AR] anaFilter.o constants.o createCB.o doCPLC.o enhancer.o filter.o FrameClassify.o gainquant.o getCBvec.o helpfun.o hpInput.o hpOutput.o iCBConstruct.o iCBSearch.o iLBC_decode.o iLBC_encode.o iLBC_test.o LPCdecode.o LPCencode.o lsf.o packing.o StateConstructW.o StateSearchW.o syntFilter.o -> libilbc.a
+   [CC] f2clib.c -> f2clib.o
+   [CC] analys.c -> analys.o
+   [CC] bsynz.c -> bsynz.o
+   [CC] chanwr.c -> chanwr.o
+   [CC] dcbias.c -> dcbias.o
+   [CC] decode.c -> decode.o
+   [CC] deemp.c -> deemp.o
+   [CC] difmag.c -> difmag.o
+   [CC] dyptrk.c -> dyptrk.o
+   [CC] encode.c -> encode.o
+   [CC] energy.c -> energy.o
+   [CC] ham84.c -> ham84.o
+   [CC] hp100.c -> hp100.o
+   [CC] invert.c -> invert.o
+   [CC] irc2pc.c -> irc2pc.o
+   [CC] ivfilt.c -> ivfilt.o
+   [CC] lpcdec.c -> lpcdec.o
+   [CC] lpcenc.c -> lpcenc.o
+   [CC] lpcini.c -> lpcini.o
+   [CC] lpfilt.c -> lpfilt.o
+   [CC] median.c -> median.o
+   [CC] mload.c -> mload.o
+   [CC] onset.c -> onset.o
+   [CC] pitsyn.c -> pitsyn.o
+   [CC] placea.c -> placea.o
+   [CC] placev.c -> placev.o
+   [CC] preemp.c -> preemp.o
+   [CC] prepro.c -> prepro.o
+   [CC] random.c -> random.o
+   [CC] rcchk.c -> rcchk.o
+   [CC] synths.c -> synths.o
+   [CC] tbdm.c -> tbdm.o
+   [CC] voicin.c -> voicin.o
+   [CC] vparms.c -> vparms.o
+   [AR] f2clib.o analys.o bsynz.o chanwr.o dcbias.o decode.o deemp.o difmag.o dyptrk.o encode.o energy.o ham84.o hp100.o invert.o irc2pc.o ivfilt.o lpcdec.o lpcenc.o lpcini.o lpfilt.o median.o mload.o onset.o pitsyn.o placea.o placev.o preemp.o prepro.o random.o rcchk.o synths.o tbdm.o voicin.o vparms.o -> liblpc10.a
+   [CC] codec_a_mu.c -> codec_a_mu.o
+   [LD] codec_a_mu.o -> codec_a_mu.so
+   [CC] codec_adpcm.c -> codec_adpcm.o
+   [LD] codec_adpcm.o -> codec_adpcm.so
+   [CC] codec_alaw.c -> codec_alaw.o
+   [LD] codec_alaw.o -> codec_alaw.so
+   [CC] codec_g722.c -> codec_g722.o
+   [CC] g722/g722_encode.c -> g722/g722_encode.o
+   [CC] g722/g722_decode.c -> g722/g722_decode.o
+   [LD] codec_g722.o g722/g722_encode.o g722/g722_decode.o -> codec_g722.so
+   [CC] codec_g726.c -> codec_g726.o
+   [LD] codec_g726.o -> codec_g726.so
+   [CC] codec_gsm.c -> codec_gsm.o
+   [LD] codec_gsm.o gsm/lib/libgsm.a -> codec_gsm.so
+   [CC] codec_ilbc.c -> codec_ilbc.o
+   [LD] codec_ilbc.o ilbc/libilbc.a -> codec_ilbc.so
+   [CC] codec_lpc10.c -> codec_lpc10.o
+   [LD] codec_lpc10.o lpc10/liblpc10.a -> codec_lpc10.so
+   [CC] codec_resample.c -> codec_resample.o
+   [CC] speex/resample.c -> speex/resample.o
+   [LD] codec_resample.o speex/resample.o -> codec_resample.so
+   [CC] codec_ulaw.c -> codec_ulaw.o
+   [LD] codec_ulaw.o -> codec_ulaw.so
+   [CC] format_g719.c -> format_g719.o
+   [LD] format_g719.o -> format_g719.so
+   [CC] format_g723.c -> format_g723.o
+   [LD] format_g723.o -> format_g723.so
+   [CC] format_g726.c -> format_g726.o
+   [LD] format_g726.o -> format_g726.so
+   [CC] format_g729.c -> format_g729.o
+   [LD] format_g729.o -> format_g729.so
+   [CC] format_gsm.c -> format_gsm.o
+   [LD] format_gsm.o -> format_gsm.so
+   [CC] format_h263.c -> format_h263.o
+   [LD] format_h263.o -> format_h263.so
+   [CC] format_h264.c -> format_h264.o
+   [LD] format_h264.o -> format_h264.so
+   [CC] format_ilbc.c -> format_ilbc.o
+   [LD] format_ilbc.o -> format_ilbc.so
+   [CC] format_jpeg.c -> format_jpeg.o
+   [LD] format_jpeg.o -> format_jpeg.so
+   [CC] format_pcm.c -> format_pcm.o
+   [LD] format_pcm.o -> format_pcm.so
+   [CC] format_siren14.c -> format_siren14.o
+   [LD] format_siren14.o -> format_siren14.so
+   [CC] format_siren7.c -> format_siren7.o
+   [LD] format_siren7.o -> format_siren7.so
+   [CC] format_sln.c -> format_sln.o
+   [LD] format_sln.o -> format_sln.so
+   [CC] format_vox.c -> format_vox.o
+   [LD] format_vox.o -> format_vox.so
+   [CC] format_wav.c -> format_wav.o
+   [LD] format_wav.o -> format_wav.so
+   [CC] format_wav_gsm.c -> format_wav_gsm.o
+   [LD] format_wav_gsm.o -> format_wav_gsm.so
+   [CC] cdr_csv.c -> cdr_csv.o
+   [LD] cdr_csv.o -> cdr_csv.so
+   [CC] cdr_custom.c -> cdr_custom.o
+   [LD] cdr_custom.o -> cdr_custom.so
+   [CC] cdr_manager.c -> cdr_manager.o
+   [LD] cdr_manager.o -> cdr_manager.so
+   [CC] cdr_pgsql.c -> cdr_pgsql.o
+   [LD] cdr_pgsql.o -> cdr_pgsql.so
+   [CC] cdr_sqlite3_custom.c -> cdr_sqlite3_custom.o
+   [LD] cdr_sqlite3_custom.o -> cdr_sqlite3_custom.so
+   [CC] cdr_syslog.c -> cdr_syslog.o
+   [LD] cdr_syslog.o -> cdr_syslog.so
+   [CC] cel_custom.c -> cel_custom.o
+   [LD] cel_custom.o -> cel_custom.so
+   [CC] cel_manager.c -> cel_manager.o
+   [LD] cel_manager.o -> cel_manager.so
+   [CC] cel_pgsql.c -> cel_pgsql.o
+   [LD] cel_pgsql.o -> cel_pgsql.so
+   [CC] cel_sqlite3_custom.c -> cel_sqlite3_custom.o
+   [LD] cel_sqlite3_custom.o -> cel_sqlite3_custom.so
+   [CC] bridge_builtin_features.c -> bridge_builtin_features.o
+   [LD] bridge_builtin_features.o -> bridge_builtin_features.so
+   [CC] bridge_builtin_interval_features.c -> bridge_builtin_interval_features.o
+   [LD] bridge_builtin_interval_features.o -> bridge_builtin_interval_features.so
+   [CC] bridge_holding.c -> bridge_holding.o
+   [LD] bridge_holding.o -> bridge_holding.so
+   [CC] bridge_native_rtp.c -> bridge_native_rtp.o
+   [LD] bridge_native_rtp.o -> bridge_native_rtp.so
+   [CC] bridge_simple.c -> bridge_simple.o
+   [LD] bridge_simple.o -> bridge_simple.so
+   [CC] bridge_softmix.c -> bridge_softmix.o
+   [LD] bridge_softmix.o -> bridge_softmix.so
+   [CC] func_aes.c -> func_aes.o
+   [LD] func_aes.o -> func_aes.so
+   [CC] func_audiohookinherit.c -> func_audiohookinherit.o
+   [LD] func_audiohookinherit.o -> func_audiohookinherit.so
+   [CC] func_base64.c -> func_base64.o
+   [LD] func_base64.o -> func_base64.so
+   [CC] func_blacklist.c -> func_blacklist.o
+   [LD] func_blacklist.o -> func_blacklist.so
+   [CC] func_callcompletion.c -> func_callcompletion.o
+   [LD] func_callcompletion.o -> func_callcompletion.so
+   [CC] func_callerid.c -> func_callerid.o
+   [LD] func_callerid.o -> func_callerid.so
+   [CC] func_cdr.c -> func_cdr.o
+   [LD] func_cdr.o -> func_cdr.so
+   [CC] func_channel.c -> func_channel.o
+   [LD] func_channel.o -> func_channel.so
+   [CC] func_config.c -> func_config.o
+   [LD] func_config.o -> func_config.so
+   [CC] func_curl.c -> func_curl.o
+   [LD] func_curl.o -> func_curl.so
+   [CC] func_cut.c -> func_cut.o
+   [LD] func_cut.o -> func_cut.so
+   [CC] func_db.c -> func_db.o
+   [LD] func_db.o -> func_db.so
+   [CC] func_devstate.c -> func_devstate.o
+   [LD] func_devstate.o -> func_devstate.so
+   [CC] func_dialgroup.c -> func_dialgroup.o
+   [LD] func_dialgroup.o -> func_dialgroup.so
+   [CC] func_dialplan.c -> func_dialplan.o
+   [LD] func_dialplan.o -> func_dialplan.so
+   [CC] func_enum.c -> func_enum.o
+   [LD] func_enum.o -> func_enum.so
+   [CC] func_env.c -> func_env.o
+   [LD] func_env.o -> func_env.so
+   [CC] func_extstate.c -> func_extstate.o
+   [LD] func_extstate.o -> func_extstate.so
+   [CC] func_frame_trace.c -> func_frame_trace.o
+   [LD] func_frame_trace.o -> func_frame_trace.so
+   [CC] func_global.c -> func_global.o
+   [LD] func_global.o -> func_global.so
+   [CC] func_groupcount.c -> func_groupcount.o
+   [LD] func_groupcount.o -> func_groupcount.so
+   [CC] func_hangupcause.c -> func_hangupcause.o
+   [LD] func_hangupcause.o -> func_hangupcause.so
+   [CC] func_holdintercept.c -> func_holdintercept.o
+   [LD] func_holdintercept.o -> func_holdintercept.so
+   [CC] func_iconv.c -> func_iconv.o
+   [LD] func_iconv.o -> func_iconv.so
+   [CC] func_jitterbuffer.c -> func_jitterbuffer.o
+   [LD] func_jitterbuffer.o -> func_jitterbuffer.so
+   [CC] func_lock.c -> func_lock.o
+   [LD] func_lock.o -> func_lock.so
+   [CC] func_logic.c -> func_logic.o
+   [LD] func_logic.o -> func_logic.so
+   [CC] func_math.c -> func_math.o
+   [LD] func_math.o -> func_math.so
+   [CC] func_md5.c -> func_md5.o
+   [LD] func_md5.o -> func_md5.so
+   [CC] func_module.c -> func_module.o
+   [LD] func_module.o -> func_module.so
+   [CC] func_periodic_hook.c -> func_periodic_hook.o
+   [LD] func_periodic_hook.o -> func_periodic_hook.so
+   [CC] func_pitchshift.c -> func_pitchshift.o
+   [LD] func_pitchshift.o -> func_pitchshift.so
+   [CC] func_presencestate.c -> func_presencestate.o
+   [LD] func_presencestate.o -> func_presencestate.so
+   [CC] func_rand.c -> func_rand.o
+   [LD] func_rand.o -> func_rand.so
+   [CC] func_realtime.c -> func_realtime.o
+   [LD] func_realtime.o -> func_realtime.so
+   [CC] func_sha1.c -> func_sha1.o
+   [LD] func_sha1.o -> func_sha1.so
+   [CC] func_shell.c -> func_shell.o
+   [LD] func_shell.o -> func_shell.so
+   [CC] func_sorcery.c -> func_sorcery.o
+   [LD] func_sorcery.o -> func_sorcery.so
+   [CC] func_sprintf.c -> func_sprintf.o
+   [LD] func_sprintf.o -> func_sprintf.so
+   [CC] func_srv.c -> func_srv.o
+   [LD] func_srv.o -> func_srv.so
+   [CC] func_strings.c -> func_strings.o
+   [LD] func_strings.o -> func_strings.so
+   [CC] func_sysinfo.c -> func_sysinfo.o
+   [LD] func_sysinfo.o -> func_sysinfo.so
+   [CC] func_talkdetect.c -> func_talkdetect.o
+   [LD] func_talkdetect.o -> func_talkdetect.so
+   [CC] func_timeout.c -> func_timeout.o
+   [LD] func_timeout.o -> func_timeout.so
+   [CC] func_uri.c -> func_uri.o
+   [LD] func_uri.o -> func_uri.so
+   [CC] func_version.c -> func_version.o
+   [LD] func_version.o -> func_version.so
+   [CC] func_vmcount.c -> func_vmcount.o
+   [LD] func_vmcount.o -> func_vmcount.so
+   [CC] func_volume.c -> func_volume.o
+   [LD] func_volume.o -> func_volume.so
+   [CC] abstract_jb.c -> abstract_jb.o
+   [CC] acl.c -> acl.o
+   [CC] adsi.c -> adsi.o
+   [CC] alaw.c -> alaw.o
+   [CC] alertpipe.c -> alertpipe.o
+   [CC] aoc.c -> aoc.o
+   [CC] app.c -> app.o
+   [CC] ast_expr2.c -> ast_expr2.o
+   [CC] ast_expr2f.c -> ast_expr2f.o
+   [CC] asterisk.c -> asterisk.o
+   [CC] astfd.c -> astfd.o
+   [CC] astmm.c -> astmm.o
+   [CC] astobj2.c -> astobj2.o
+   [CC] astobj2_container.c -> astobj2_container.o
+   [CC] astobj2_hash.c -> astobj2_hash.o
+   [CC] astobj2_rbtree.c -> astobj2_rbtree.o
+   [CC] audiohook.c -> audiohook.o
+   [CC] autochan.c -> autochan.o
+   [CC] autoservice.c -> autoservice.o
+   [CC] backtrace.c -> backtrace.o
+   [CC] bridge.c -> bridge.o
+   [CC] bridge_after.c -> bridge_after.o
+   [CC] bridge_basic.c -> bridge_basic.o
+   [CC] bridge_channel.c -> bridge_channel.o
+   [CC] bridge_roles.c -> bridge_roles.o
+   [CC] bucket.c -> bucket.o
+   [CC] callerid.c -> callerid.o
+   [CC] ccss.c -> ccss.o
+   [CC] cdr.c -> cdr.o
+   [CC] cel.c -> cel.o
+   [CC] channel.c -> channel.o
+   [CC] channel_internal_api.c -> channel_internal_api.o
+   [CC] chanvars.c -> chanvars.o
+   [CC] cli.c -> cli.o
+   [CC] codec.c -> codec.o
+   [CC] codec_builtin.c -> codec_builtin.o
+   [CC] config.c -> config.o
+   [CC] config_options.c -> config_options.o
+   [CC] core_local.c -> core_local.o
+   [CC] core_unreal.c -> core_unreal.o
+   [CC] crypt.c -> crypt.o
+   [CC] data.c -> data.o
+   [CC] datastore.c -> datastore.o
+   [CC] db.c -> db.o
+   [CC] devicestate.c -> devicestate.o
+   [CC] dial.c -> dial.o
+   [CC] dns.c -> dns.o
+   [CC] dnsmgr.c -> dnsmgr.o
+   [CC] dsp.c -> dsp.o
+   [CC] endpoints.c -> endpoints.o
+   [CC] enum.c -> enum.o
+   [CC] event.c -> event.o
+   [CC] features.c -> features.o
+   [CC] features_config.c -> features_config.o
+   [CC] file.c -> file.o
+   [CC] fixedjitterbuf.c -> fixedjitterbuf.o
+   [CC] format.c -> format.o
+   [CC] format_cache.c -> format_cache.o
+   [CC] format_cap.c -> format_cap.o
+   [CC] format_compatibility.c -> format_compatibility.o
+   [CC] frame.c -> frame.o
+   [CC] framehook.c -> framehook.o
+   [CC] fskmodem.c -> fskmodem.o
+   [CC] global_datastores.c -> global_datastores.o
+   [CC] hashtab.c -> hashtab.o
+   [CC] heap.c -> heap.o
+   [CC] http.c -> http.o
+   [CC] image.c -> image.o
+   [CC] indications.c -> indications.o
+   [CC] io.c -> io.o
+   [CC] jitterbuf.c -> jitterbuf.o
+   [CC] json.c -> json.o
+   [CC] libasteriskpj.c -> libasteriskpj.o
+   [CC] loader.c -> loader.o
+   [CC] lock.c -> lock.o
+   [CC] logger.c -> logger.o
+   [CC] manager.c -> manager.o
+   [CC] manager_bridges.c -> manager_bridges.o
+   [CC] manager_channels.c -> manager_channels.o
+   [CC] manager_endpoints.c -> manager_endpoints.o
+   [CC] manager_mwi.c -> manager_mwi.o
+   [CC] manager_system.c -> manager_system.o
+   [CC] max_forwards.c -> max_forwards.o
+   [CC] md5.c -> md5.o
+   [CC] media_index.c -> media_index.o
+   [CC] message.c -> message.o
+   [CC] mixmonitor.c -> mixmonitor.o
+   [CC] named_acl.c -> named_acl.o
+   [CC] named_locks.c -> named_locks.o
+   [CC] netsock.c -> netsock.o
+   [CC] netsock2.c -> netsock2.o
+   [CC] optional_api.c -> optional_api.o
+   [CC] parking.c -> parking.o
+   [CC] pbx.c -> pbx.o
+   [CC] pbx_app.c -> pbx_app.o
+   [CC] pbx_builtins.c -> pbx_builtins.o
+   [CC] pbx_functions.c -> pbx_functions.o
+   [CC] pbx_hangup_handler.c -> pbx_hangup_handler.o
+   [CC] pbx_switch.c -> pbx_switch.o
+   [CC] pbx_timing.c -> pbx_timing.o
+   [CC] pbx_variables.c -> pbx_variables.o
+   [CC] pickup.c -> pickup.o
+   [CC] plc.c -> plc.o
+   [CC] poll.c -> poll.o
+   [CC] presencestate.c -> presencestate.o
+   [CC] privacy.c -> privacy.o
+   [CC] rtp_engine.c -> rtp_engine.o
+   [CC] say.c -> say.o
+   [CC] sched.c -> sched.o
+   [CC] sdp_srtp.c -> sdp_srtp.o
+   [CC] security_events.c -> security_events.o
+   [CC] sem.c -> sem.o
+   [CC] sha1.c -> sha1.o
+   [CC] sip_api.c -> sip_api.o
+   [CC] slinfactory.c -> slinfactory.o
+   [CC] smoother.c -> smoother.o
+   [CC] sorcery.c -> sorcery.o
+   [CC] sounds_index.c -> sounds_index.o
+   [CC] srv.c -> srv.o
+   [CC] stasis.c -> stasis.o
+   [CC] stasis_bridges.c -> stasis_bridges.o
+   [CC] stasis_cache.c -> stasis_cache.o
+   [CC] stasis_cache_pattern.c -> stasis_cache_pattern.o
+   [CC] stasis_channels.c -> stasis_channels.o
+   [CC] stasis_endpoints.c -> stasis_endpoints.o
+   [CC] stasis_message.c -> stasis_message.o
+   [CC] stasis_message_router.c -> stasis_message_router.o
+   [CC] stasis_system.c -> stasis_system.o
+   [CC] stdtime/localtime.c -> stdtime/localtime.o
+   [CC] strcompat.c -> strcompat.o
+   [CC] stringfields.c -> stringfields.o
+   [CC] strings.c -> strings.o
+   [CC] stun.c -> stun.o
+   [CC] syslog.c -> syslog.o
+   [CC] taskprocessor.c -> taskprocessor.o
+   [CC] tcptls.c -> tcptls.o
+   [CC] tdd.c -> tdd.o
+   [CC] term.c -> term.o
+   [CC] test.c -> test.o
+   [CC] threadpool.c -> threadpool.o
+   [CC] threadstorage.c -> threadstorage.o
+   [CC] timing.c -> timing.o
+   [CC] translate.c -> translate.o
+   [CC] udptl.c -> udptl.o
+   [CC] ulaw.c -> ulaw.o
+   [CC] uri.c -> uri.o
+   [CC] utils.c -> utils.o
+   [CC] uuid.c -> uuid.o
+   [CC] version.c -> version.o
+   [CC] xml.c -> xml.o
+   [CC] xmldoc.c -> xmldoc.o
+   [CC] libasteriskssl.c -> libasteriskssl.o
+   [LD] libasteriskssl.o -> libasteriskssl.dylib
+creating cache ./config.cache
+checking for gcc... gcc
+checking whether the C compiler (gcc -Qunused-arguments -pthread -I../..//include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/libxml2 -pipe -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wno-unknown-warning-option -fblocks -g3 -D__Darwin__ -mmacosx-version-min=10.6 -O3 -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -march=native    -L/usr/local/lib  ) works... yes
+checking whether the C compiler (gcc -Qunused-arguments -pthread -I../..//include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/libxml2 -pipe -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wno-unknown-warning-option -fblocks -g3 -D__Darwin__ -mmacosx-version-min=10.6 -O3 -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -march=native    -L/usr/local/lib  ) is a cross-compiler... no
+checking whether we are using GNU C... yes
+checking whether gcc accepts -g... yes
+checking how to run the C preprocessor... gcc -E
+checking for mawk... awk
+checking host system type... x86_64-apple-darwin16.6.0
+checking for a BSD compatible install... /usr/bin/install -c
+checking for ranlib... ranlib
+checking for ar... /usr/bin/ar
+checking for tgetent in -ltermcap... yes
+checking for termcap.h... yes
+checking for sys/cdefs.h... yes
+checking for vis.h... yes
+checking for issetugid... yes
+checking for fgetln... yes
+checking for strvis... yes
+checking for strunvis... yes
+checking for strlcpy... yes
+checking for strlcat... yes
+updating cache ./config.cache
+creating ./config.status
+creating Makefile
+creating makelist
+creating config.h
+In file included from editline.c:8:
+./el.c:173:21: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                        el->el_flags &= ~HANDLE_SIGNALS;
+                                        ~^~~~~~~~~~~~~~
+./el.h:58:25: note: expanded from macro 'HANDLE_SIGNALS'
+#define HANDLE_SIGNALS  1<<0
+                         ^
+In file included from editline.c:8:
+./el.c:244:21: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                        el->el_flags &= ~EDIT_DISABLED;
+                                        ~^~~~~~~~~~~~~
+./el.h:60:24: note: expanded from macro 'EDIT_DISABLED'
+#define EDIT_DISABLED   1<<2
+                         ^
+In file included from editline.c:8:
+./el.c:501:20: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                el->el_flags &= ~EDIT_DISABLED;
+                                ~^~~~~~~~~~~~~
+./el.h:60:24: note: expanded from macro 'EDIT_DISABLED'
+#define EDIT_DISABLED   1<<2
+                         ^
+3 warnings generated.
+   [LD] abstract_jb.o acl.o adsi.o alaw.o alertpipe.o aoc.o app.o ast_expr2.o ast_expr2f.o asterisk.o astfd.o astmm.o astobj2.o astobj2_container.o astobj2_hash.o astobj2_rbtree.o audiohook.o autochan.o autoservice.o backtrace.o bridge.o bridge_after.o bridge_basic.o bridge_channel.o bridge_roles.o bucket.o callerid.o ccss.o cdr.o cel.o channel.o channel_internal_api.o chanvars.o cli.o codec.o codec_builtin.o config.o config_options.o core_local.o core_unreal.o crypt.o data.o datastore.o db.o devicestate.o dial.o dns.o dnsmgr.o dsp.o endpoints.o enum.o event.o features.o features_config.o file.o fixedjitterbuf.o format.o format_cache.o format_cap.o format_compatibility.o frame.o framehook.o fskmodem.o global_datastores.o hashtab.o heap.o http.o image.o indications.o io.o jitterbuf.o json.o libasteriskpj.o loader.o lock.o logger.o manager.o manager_bridges.o manager_channels.o manager_endpoints.o manager_mwi.o manager_system.o max_forwards.o md5.o media_index.o message.o mixmonitor.o named_acl.o named_locks.o netsock.o netsock2.o optional_api.o parking.o pbx.o pbx_app.o pbx_builtins.o pbx_functions.o pbx_hangup_handler.o pbx_switch.o pbx_timing.o pbx_variables.o pickup.o plc.o poll.o presencestate.o privacy.o rtp_engine.o say.o sched.o sdp_srtp.o security_events.o sem.o sha1.o sip_api.o slinfactory.o smoother.o sorcery.o sounds_index.o srv.o stasis.o stasis_bridges.o stasis_cache.o stasis_cache_pattern.o stasis_channels.o stasis_endpoints.o stasis_message.o stasis_message_router.o stasis_system.o stdtime/localtime.o strcompat.o stringfields.o strings.o stun.o syslog.o taskprocessor.o tcptls.o tdd.o term.o test.o threadpool.o threadstorage.o timing.o translate.o udptl.o ulaw.o uri.o utils.o uuid.o version.o xml.o xmldoc.o editline/libedit.a -> asterisk
+clang: warning: libstdc++ is deprecated; move to libc++ with a minimum deployment target of OS X 10.9 [-Wdeprecated]
+   [CC] res_adsi.c -> res_adsi.o
+   [LD] res_adsi.o -> res_adsi.so
+   [CC] res_ael_share.c -> res_ael_share.o
+   [CC] ael/ael_lex.c -> ael/ael_lex.o
+   [CC] ael/ael.tab.c -> ael/ael.tab.o
+   [CC] ael/pval.c -> ael/pval.o
+   [LD] res_ael_share.o ael/ael_lex.o ael/ael.tab.o ael/pval.o -> res_ael_share.so
+   [CC] res_agi.c -> res_agi.o
+   [LD] res_agi.o -> res_agi.so
+   [CC] res_ari.c -> res_ari.o
+   [CC] ari/cli.c -> ari/cli.o
+   [CC] ari/config.c -> ari/config.o
+   [CC] ari/ari_websockets.c -> ari/ari_websockets.o
+   [LD] res_ari.o ari/cli.o ari/config.o ari/ari_websockets.o -> res_ari.so
+   [CC] res_ari_applications.c -> res_ari_applications.o
+   [CC] ari/resource_applications.c -> ari/resource_applications.o
+   [LD] res_ari_applications.o ari/resource_applications.o -> res_ari_applications.so
+   [CC] res_ari_asterisk.c -> res_ari_asterisk.o
+   [CC] ari/resource_asterisk.c -> ari/resource_asterisk.o
+   [LD] res_ari_asterisk.o ari/resource_asterisk.o -> res_ari_asterisk.so
+   [CC] res_ari_bridges.c -> res_ari_bridges.o
+   [CC] ari/resource_bridges.c -> ari/resource_bridges.o
+   [LD] res_ari_bridges.o ari/resource_bridges.o -> res_ari_bridges.so
+   [CC] res_ari_channels.c -> res_ari_channels.o
+   [CC] ari/resource_channels.c -> ari/resource_channels.o
+   [LD] res_ari_channels.o ari/resource_channels.o -> res_ari_channels.so
+   [CC] res_ari_device_states.c -> res_ari_device_states.o
+   [CC] ari/resource_device_states.c -> ari/resource_device_states.o
+   [LD] res_ari_device_states.o ari/resource_device_states.o -> res_ari_device_states.so
+   [CC] res_ari_endpoints.c -> res_ari_endpoints.o
+   [CC] ari/resource_endpoints.c -> ari/resource_endpoints.o
+   [LD] res_ari_endpoints.o ari/resource_endpoints.o -> res_ari_endpoints.so
+   [CC] res_ari_events.c -> res_ari_events.o
+   [CC] ari/resource_events.c -> ari/resource_events.o
+   [LD] res_ari_events.o ari/resource_events.o -> res_ari_events.so
+   [CC] res_ari_model.c -> res_ari_model.o
+   [CC] ari/ari_model_validators.c -> ari/ari_model_validators.o
+   [LD] res_ari_model.o ari/ari_model_validators.o -> res_ari_model.so
+   [CC] res_ari_playbacks.c -> res_ari_playbacks.o
+   [CC] ari/resource_playbacks.c -> ari/resource_playbacks.o
+   [LD] res_ari_playbacks.o ari/resource_playbacks.o -> res_ari_playbacks.so
+   [CC] res_ari_recordings.c -> res_ari_recordings.o
+   [CC] ari/resource_recordings.c -> ari/resource_recordings.o
+   [LD] res_ari_recordings.o ari/resource_recordings.o -> res_ari_recordings.so
+   [CC] res_ari_sounds.c -> res_ari_sounds.o
+   [CC] ari/resource_sounds.c -> ari/resource_sounds.o
+   [LD] res_ari_sounds.o ari/resource_sounds.o -> res_ari_sounds.so
+   [CC] res_calendar.c -> res_calendar.o
+   [LD] res_calendar.o -> res_calendar.so
+   [CC] res_clialiases.c -> res_clialiases.o
+   [LD] res_clialiases.o -> res_clialiases.so
+   [CC] res_clioriginate.c -> res_clioriginate.o
+   [LD] res_clioriginate.o -> res_clioriginate.so
+   [CC] res_config_curl.c -> res_config_curl.o
+   [LD] res_config_curl.o -> res_config_curl.so
+   [CC] res_config_ldap.c -> res_config_ldap.o
+   [LD] res_config_ldap.o -> res_config_ldap.so
+   [CC] res_config_pgsql.c -> res_config_pgsql.o
+   [LD] res_config_pgsql.o -> res_config_pgsql.so
+   [CC] res_config_sqlite3.c -> res_config_sqlite3.o
+res_config_sqlite3.c:350:3: warning: 'sqlite3_trace' is deprecated [-Wdeprecated-declarations]
+                sqlite3_trace(db->handle, trace_cb, db);
+                ^
+/usr/include/sqlite3.h:2850:36: note: 'sqlite3_trace' has been explicitly marked deprecated here
+SQLITE_API SQLITE_DEPRECATED void *sqlite3_trace(sqlite3*,
+                                   ^
+res_config_sqlite3.c:352:3: warning: 'sqlite3_trace' is deprecated [-Wdeprecated-declarations]
+                sqlite3_trace(db->handle, NULL, NULL);
+                ^
+/usr/include/sqlite3.h:2850:36: note: 'sqlite3_trace' has been explicitly marked deprecated here
+SQLITE_API SQLITE_DEPRECATED void *sqlite3_trace(sqlite3*,
+                                   ^
+res_config_sqlite3.c:446:4: warning: 'sqlite3_trace' is deprecated [-Wdeprecated-declarations]
+                        sqlite3_trace(db->handle, NULL, NULL);
+                        ^
+/usr/include/sqlite3.h:2850:36: note: 'sqlite3_trace' has been explicitly marked deprecated here
+SQLITE_API SQLITE_DEPRECATED void *sqlite3_trace(sqlite3*,
+                                   ^
+res_config_sqlite3.c:448:4: warning: 'sqlite3_trace' is deprecated [-Wdeprecated-declarations]
+                        sqlite3_trace(db->handle, trace_cb, db);
+                        ^
+/usr/include/sqlite3.h:2850:36: note: 'sqlite3_trace' has been explicitly marked deprecated here
+SQLITE_API SQLITE_DEPRECATED void *sqlite3_trace(sqlite3*,
+                                   ^
+4 warnings generated.
+   [LD] res_config_sqlite3.o -> res_config_sqlite3.so
+   [CC] res_convert.c -> res_convert.o
+   [LD] res_convert.o -> res_convert.so
+   [CC] res_curl.c -> res_curl.o
+   [LD] res_curl.o -> res_curl.so
+   [CC] res_fax.c -> res_fax.o
+res_fax.c:4566:21: warning: comparison of unsigned expression >= 0 is always true [-Wtautological-compare]
+                                                if (gwtimeout >= 0) {
+                                                    ~~~~~~~~~ ^  ~
+res_fax.c:4610:21: warning: comparison of unsigned expression >= 0 is always true [-Wtautological-compare]
+                                                if (fdtimeout >= 0) {
+                                                    ~~~~~~~~~ ^  ~
+2 warnings generated.
+   [LD] res_fax.o -> res_fax.so
+   [CC] res_format_attr_celt.c -> res_format_attr_celt.o
+   [LD] res_format_attr_celt.o -> res_format_attr_celt.so
+   [CC] res_format_attr_g729.c -> res_format_attr_g729.o
+   [LD] res_format_attr_g729.o -> res_format_attr_g729.so
+   [CC] res_format_attr_h263.c -> res_format_attr_h263.o
+   [LD] res_format_attr_h263.o -> res_format_attr_h263.so
+   [CC] res_format_attr_h264.c -> res_format_attr_h264.o
+   [LD] res_format_attr_h264.o -> res_format_attr_h264.so
+   [CC] res_format_attr_opus.c -> res_format_attr_opus.o
+   [LD] res_format_attr_opus.o -> res_format_attr_opus.so
+   [CC] res_format_attr_silk.c -> res_format_attr_silk.o
+   [LD] res_format_attr_silk.o -> res_format_attr_silk.so
+   [CC] res_format_attr_siren14.c -> res_format_attr_siren14.o
+   [LD] res_format_attr_siren14.o -> res_format_attr_siren14.so
+   [CC] res_format_attr_siren7.c -> res_format_attr_siren7.o
+   [LD] res_format_attr_siren7.o -> res_format_attr_siren7.so
+   [CC] res_format_attr_vp8.c -> res_format_attr_vp8.o
+   [LD] res_format_attr_vp8.o -> res_format_attr_vp8.so
+   [CC] res_hep.c -> res_hep.o
+   [LD] res_hep.o -> res_hep.so
+   [CC] res_hep_rtcp.c -> res_hep_rtcp.o
+   [LD] res_hep_rtcp.o -> res_hep_rtcp.so
+   [CC] res_http_websocket.c -> res_http_websocket.o
+res_http_websocket.c:300:40: warning: implicit conversion from 'int' to 'char' changes value from 136 to -120 [-Wconstant-conversion]
+        frame[0] = AST_WEBSOCKET_OPCODE_CLOSE | 0x80;
+                 ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+1 warning generated.
+   [LD] res_http_websocket.o -> res_http_websocket.so
+   [CC] res_limit.c -> res_limit.o
+   [LD] res_limit.o -> res_limit.so
+   [CC] res_manager_devicestate.c -> res_manager_devicestate.o
+   [LD] res_manager_devicestate.o -> res_manager_devicestate.so
+   [CC] res_manager_presencestate.c -> res_manager_presencestate.o
+   [LD] res_manager_presencestate.o -> res_manager_presencestate.so
+   [CC] res_monitor.c -> res_monitor.o
+   [LD] res_monitor.o -> res_monitor.so
+   [CC] res_musiconhold.c -> res_musiconhold.o
+   [LD] res_musiconhold.o -> res_musiconhold.so
+   [CC] res_mutestream.c -> res_mutestream.o
+   [LD] res_mutestream.o -> res_mutestream.so
+   [CC] res_parking.c -> res_parking.o
+   [CC] parking/parking_applications.c -> parking/parking_applications.o
+   [CC] parking/parking_bridge.c -> parking/parking_bridge.o
+   [CC] parking/parking_bridge_features.c -> parking/parking_bridge_features.o
+   [CC] parking/parking_controller.c -> parking/parking_controller.o
+   [CC] parking/parking_devicestate.c -> parking/parking_devicestate.o
+   [CC] parking/parking_manager.c -> parking/parking_manager.o
+   [CC] parking/parking_tests.c -> parking/parking_tests.o
+   [CC] parking/parking_ui.c -> parking/parking_ui.o
+   [LD] res_parking.o parking/parking_applications.o parking/parking_bridge.o parking/parking_bridge_features.o parking/parking_controller.o parking/parking_devicestate.o parking/parking_manager.o parking/parking_tests.o parking/parking_ui.o -> res_parking.so
+   [CC] res_phoneprov.c -> res_phoneprov.o
+   [LD] res_phoneprov.o -> res_phoneprov.so
+   [CC] res_realtime.c -> res_realtime.o
+   [LD] res_realtime.o -> res_realtime.so
+   [CC] res_rtp_asterisk.c -> res_rtp_asterisk.o
+   [LD] res_rtp_asterisk.o -> res_rtp_asterisk.so
+   [CC] res_rtp_multicast.c -> res_rtp_multicast.o
+   [LD] res_rtp_multicast.o -> res_rtp_multicast.so
+   [CC] res_security_log.c -> res_security_log.o
+   [LD] res_security_log.o -> res_security_log.so
+   [CC] res_smdi.c -> res_smdi.o
+   [LD] res_smdi.o -> res_smdi.so
+   [CC] res_sorcery_astdb.c -> res_sorcery_astdb.o
+   [LD] res_sorcery_astdb.o -> res_sorcery_astdb.so
+   [CC] res_sorcery_config.c -> res_sorcery_config.o
+   [LD] res_sorcery_config.o -> res_sorcery_config.so
+   [CC] res_sorcery_memory.c -> res_sorcery_memory.o
+   [LD] res_sorcery_memory.o -> res_sorcery_memory.so
+   [CC] res_sorcery_memory_cache.c -> res_sorcery_memory_cache.o
+   [LD] res_sorcery_memory_cache.o -> res_sorcery_memory_cache.so
+   [CC] res_sorcery_realtime.c -> res_sorcery_realtime.o
+   [LD] res_sorcery_realtime.o -> res_sorcery_realtime.so
+   [CC] res_speech.c -> res_speech.o
+   [LD] res_speech.o -> res_speech.so
+   [CC] res_stasis.c -> res_stasis.o
+   [CC] stasis/app.c -> stasis/app.o
+   [CC] stasis/command.c -> stasis/command.o
+   [CC] stasis/control.c -> stasis/control.o
+   [CC] stasis/messaging.c -> stasis/messaging.o
+   [CC] stasis/stasis_bridge.c -> stasis/stasis_bridge.o
+   [LD] res_stasis.o stasis/app.o stasis/command.o stasis/control.o stasis/messaging.o stasis/stasis_bridge.o -> res_stasis.so
+   [CC] res_stasis_answer.c -> res_stasis_answer.o
+   [LD] res_stasis_answer.o -> res_stasis_answer.so
+   [CC] res_stasis_device_state.c -> res_stasis_device_state.o
+   [LD] res_stasis_device_state.o -> res_stasis_device_state.so
+   [CC] res_stasis_playback.c -> res_stasis_playback.o
+   [LD] res_stasis_playback.o -> res_stasis_playback.so
+   [CC] res_stasis_recording.c -> res_stasis_recording.o
+   [CC] stasis_recording/stored.c -> stasis_recording/stored.o
+   [LD] res_stasis_recording.o stasis_recording/stored.o -> res_stasis_recording.so
+   [CC] res_stasis_snoop.c -> res_stasis_snoop.o
+   [LD] res_stasis_snoop.o -> res_stasis_snoop.so
+   [CC] res_statsd.c -> res_statsd.o
+   [LD] res_statsd.o -> res_statsd.so
+   [CC] res_stun_monitor.c -> res_stun_monitor.o
+   [LD] res_stun_monitor.o -> res_stun_monitor.so
+   [CC] res_timing_pthread.c -> res_timing_pthread.o
+   [LD] res_timing_pthread.o -> res_timing_pthread.so
+   [CC] format_mp3.c -> format_mp3.o
+   [CC] mp3/common.c -> mp3/common.o
+   [CC] mp3/dct64_i386.c -> mp3/dct64_i386.o
+   [CC] mp3/decode_ntom.c -> mp3/decode_ntom.o
+   [CC] mp3/layer3.c -> mp3/layer3.o
+   [CC] mp3/tabinit.c -> mp3/tabinit.o
+   [CC] mp3/interface.c -> mp3/interface.o
+   [LD] format_mp3.o mp3/common.o mp3/dct64_i386.o mp3/decode_ntom.o mp3/layer3.o mp3/tabinit.o mp3/interface.o -> format_mp3.so
+Building Documentation For: third-party channels pbx apps codecs formats cdr cel bridges funcs tests main res addons 
+ +--------- Asterisk Build Complete ---------+
+ + Asterisk has successfully been built, and +
+ + can be installed by running:              +
+ +                                           +
+ +                make install               +
+ +-------------------------------------------+
+ 
