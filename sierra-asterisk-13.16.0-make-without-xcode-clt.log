@@ -1,0 +1,45 @@
+$ make
+   [CC] astcanary.c -> astcanary.o
+   [LD] astcanary.o -> astcanary
+   [CC] astdb2sqlite3.c -> astdb2sqlite3.o
+   [CC] hash/hash.c -> hash/hash.o
+   [CC] hash/hash_bigkey.c -> hash/hash_bigkey.o
+   [CC] hash/hash_buf.c -> hash/hash_buf.o
+   [CC] hash/hash_func.c -> hash/hash_func.o
+   [CC] hash/hash_log2.c -> hash/hash_log2.o
+   [CC] hash/hash_page.c -> hash/hash_page.o
+   [CC] hash/ndbm.c -> hash/ndbm.o
+   [CC] btree/bt_close.c -> btree/bt_close.o
+   [CC] btree/bt_conv.c -> btree/bt_conv.o
+   [CC] btree/bt_debug.c -> btree/bt_debug.o
+   [CC] btree/bt_delete.c -> btree/bt_delete.o
+   [CC] btree/bt_get.c -> btree/bt_get.o
+   [CC] btree/bt_open.c -> btree/bt_open.o
+   [CC] btree/bt_overflow.c -> btree/bt_overflow.o
+   [CC] btree/bt_page.c -> btree/bt_page.o
+   [CC] btree/bt_put.c -> btree/bt_put.o
+   [CC] btree/bt_search.c -> btree/bt_search.o
+   [CC] btree/bt_seq.c -> btree/bt_seq.o
+   [CC] btree/bt_split.c -> btree/bt_split.o
+   [CC] btree/bt_utils.c -> btree/bt_utils.o
+   [CC] db/db.c -> db/db.o
+   [CC] mpool/mpool.c -> mpool/mpool.o
+   [CC] recno/rec_close.c -> recno/rec_close.o
+   [CC] recno/rec_delete.c -> recno/rec_delete.o
+   [CC] recno/rec_get.c -> recno/rec_get.o
+   [CC] recno/rec_open.c -> recno/rec_open.o
+   [CC] recno/rec_put.c -> recno/rec_put.o
+   [CC] recno/rec_search.c -> recno/rec_search.o
+   [CC] recno/rec_seq.c -> recno/rec_seq.o
+   [CC] recno/rec_utils.c -> recno/rec_utils.o
+   [AR] hash/hash.o hash/hash_bigkey.o hash/hash_buf.o hash/hash_func.o hash/hash_log2.o hash/hash_page.o hash/ndbm.o btree/bt_close.o btree/bt_conv.o btree/bt_debug.o btree/bt_delete.o btree/bt_get.o btree/bt_open.o btree/bt_overflow.o btree/bt_page.o btree/bt_put.o btree/bt_search.o btree/bt_seq.o btree/bt_split.o btree/bt_utils.o db/db.o mpool/mpool.o recno/rec_close.o recno/rec_delete.o recno/rec_get.o recno/rec_open.o recno/rec_put.o recno/rec_search.o recno/rec_seq.o recno/rec_utils.o -> libdb1.a
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libdb1.a(bt_debug.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libdb1.a(bt_debug.o) has no symbols
+   [LD] astdb2sqlite3.o db1-ast/libdb1.a -> astdb2sqlite3
+   [CC] astdb2bdb.c -> astdb2bdb.o
+   [LD] astdb2bdb.o db1-ast/libdb1.a -> astdb2bdb
+   [CC] chan_bridge_media.c -> chan_bridge_media.o
+   [LD] chan_bridge_media.o -> chan_bridge_media.so
+clang: error: no such file or directory: '/usr/lib/bundle1.o'
+make[1]: *** [chan_bridge_media.so] Error 1
+make: *** [channels] Error 2
