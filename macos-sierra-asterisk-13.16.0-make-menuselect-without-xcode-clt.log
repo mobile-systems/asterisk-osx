@@ -1,0 +1,15 @@
+$ make menuselect
+CC="cc" CXX="g++" LD="" AR="" RANLIB="" CFLAGS="" LDFLAGS="" make -C menuselect CONFIGURE_SILENT="--silent" cmenuselect
+gcc  -g -D_GNU_SOURCE -Wall -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/libxml2   -c -o menuselect.o menuselect.c
+gcc  -g -D_GNU_SOURCE -Wall   -c -o strcompat.o strcompat.c
+gcc  -g -D_GNU_SOURCE -Wall    -c -o menuselect_curses.o menuselect_curses.c
+gcc  -o cmenuselect menuselect.o strcompat.o menuselect_curses.o -lncurses  -L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/lib -lxml2 -lz -lpthread -licucore -lm
+CC="cc" CXX="g++" LD="" AR="" RANLIB="" CFLAGS="" LDFLAGS="" make -C menuselect CONFIGURE_SILENT="--silent" nmenuselect
+make[1]: Nothing to be done for `nmenuselect'.
+CC="cc" CXX="g++" LD="" AR="" RANLIB="" CFLAGS="" LDFLAGS="" make -C menuselect CONFIGURE_SILENT="--silent" gmenuselect
+make[1]: Nothing to be done for `gmenuselect'.
+Generating input for menuselect ...
+CC="cc" CXX="g++" LD="" AR="" RANLIB="" CFLAGS="" LDFLAGS="" make -C menuselect CONFIGURE_SILENT="--silent" menuselect
+gcc  -g -D_GNU_SOURCE -Wall   -c -o menuselect_stub.o menuselect_stub.c
+gcc  -o menuselect menuselect.o strcompat.o menuselect_stub.o -L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/lib -lxml2 -lz -lpthread -licucore -lm
+menuselect changes saved!
