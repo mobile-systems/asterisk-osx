@@ -1,0 +1,17 @@
+$ ./contrib/scripts/get_mp3_source.sh 
+A    addons/mp3
+A    addons/mp3/Makefile
+A    addons/mp3/README
+A    addons/mp3/decode_i386.c
+A    addons/mp3/dct64_i386.c
+A    addons/mp3/MPGLIB_TODO
+A    addons/mp3/mpg123.h
+A    addons/mp3/layer3.c
+A    addons/mp3/mpglib.h
+A    addons/mp3/decode_ntom.c
+A    addons/mp3/interface.c
+A    addons/mp3/MPGLIB_README
+A    addons/mp3/common.c
+A    addons/mp3/huffman.h
+A    addons/mp3/tabinit.c
+Exported revision 202.
