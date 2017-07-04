@@ -1,0 +1,744 @@
+$ ./configure --without-netsnmp --with-postgres=/Library/PostgreSQL/9.4/
+checking build system type... x86_64-apple-darwin16.6.0
+checking host system type... x86_64-apple-darwin16.6.0
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether char is unsigned... no
+checking for uname... /usr/bin/uname
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking how to run the C preprocessor... gcc -E
+checking how to run the C++ preprocessor... g++ -E
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for egrep... grep -E
+checking for ld used by gcc... /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld
+checking if the linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) is GNU ld... no
+checking for gawk... no
+checking for mawk... no
+checking for nawk... no
+checking for awk... awk
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether ln -s works... yes
+checking for ranlib... ranlib
+checking for GNU make... make
+checking for egrep... (cached) /usr/bin/grep -E
+checking for strip... strip
+checking for ar... ar
+checking for bison... /usr/bin/bison
+checking for cmp... /usr/bin/cmp
+checking for cat... /bin/cat
+checking for flex... /usr/bin/flex
+checking for grep... (cached) /usr/bin/grep
+checking for python... /usr/bin/python
+checking for find... /usr/bin/find
+checking for compress... /usr/bin/compress
+checking for basename... /usr/bin/basename
+checking for dirname... /usr/bin/dirname
+checking for sh... /bin/sh
+checking for ln... /bin/ln
+checking for doxygen... :
+checking for dot... :
+checking for wget... /usr/local/bin/wget
+checking for curl... /usr/bin/curl
+checking for rubber... :
+checking for catdvi... :
+checking for kpsewhich... :
+checking for xmllint... /usr/bin/xmllint
+checking for xmlstarlet... :
+checking for bash... /bin/sh
+checking for git... /usr/bin/git
+checking for alembic... :
+checking for bzip2... /usr/bin/bzip2
+checking for tar... /usr/bin/tar
+checking for patch... /usr/bin/patch
+checking for sed... (cached) /usr/bin/sed
+checking for nm... /usr/bin/nm
+checking for ldconfig... :
+checking for sha1sum... /usr/local/src/asterisk-13.16.0/build_tools/sha1sum-sh
+checking for openssl... /usr/bin/openssl
+checking for bison that supports parse-param... /usr/bin/bison
+checking for soxmix... no
+checking for md5... md5
+checking for a sed that does not truncate output... (cached) /usr/bin/sed
+checking whether gcc is Clang... yes
+checking whether Clang needs flag to prevent "argument unused" warning when linking with -pthread... -Qunused-arguments
+checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
+checking whether more special flags are required for pthreads... no
+checking for PTHREAD_PRIO_INHERIT... yes
+checking for RAII support... checking for clang -fblocks... yes
+checking for clang strsep/strcmp optimization... prevent use of __string2_1bptr_p / strsep / strcmp from bits/string2.h
+checking for gawk... (cached) awk
+checking for curl-config... /usr/bin/curl-config
+checking for the version of libcurl... 7.51.0
+checking for libcurl >= version 7.10.1... yes
+checking whether libcurl is usable... yes
+checking for curl_free... yes
+checking for size_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for ANSI C header files... (cached) yes
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking arpa/inet.h usability... yes
+checking arpa/inet.h presence... yes
+checking for arpa/inet.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking for inttypes.h... (cached) yes
+checking libintl.h usability... yes
+checking libintl.h presence... yes
+checking for libintl.h... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking malloc.h usability... no
+checking malloc.h presence... no
+checking for malloc.h... no
+checking netdb.h usability... yes
+checking netdb.h presence... yes
+checking for netdb.h... yes
+checking netinet/in.h usability... yes
+checking netinet/in.h presence... yes
+checking for netinet/in.h... yes
+checking stddef.h usability... yes
+checking stddef.h presence... yes
+checking for stddef.h... yes
+checking for stdint.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for strings.h... (cached) yes
+checking sys/event.h usability... yes
+checking sys/event.h presence... yes
+checking for sys/event.h... yes
+checking sys/file.h usability... yes
+checking sys/file.h presence... yes
+checking for sys/file.h... yes
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking syslog.h usability... yes
+checking syslog.h presence... yes
+checking for syslog.h... yes
+checking termios.h usability... yes
+checking termios.h presence... yes
+checking for termios.h... yes
+checking for unistd.h... (cached) yes
+checking utime.h usability... yes
+checking utime.h presence... yes
+checking for utime.h... yes
+checking arpa/nameser.h usability... yes
+checking arpa/nameser.h presence... yes
+checking for arpa/nameser.h... yes
+checking sys/io.h usability... no
+checking sys/io.h presence... no
+checking for sys/io.h... no
+checking for tgetent in -ltermcap... yes
+checking for tgetent in -ltinfo... no
+checking for initscr in -lcurses... yes
+checking curses.h usability... yes
+checking curses.h presence... yes
+checking for curses.h... yes
+checking for initscr in -lncurses... yes
+checking for curses.h... (cached) yes
+checking for uuid_generate_random in -luuid... no
+checking for uuid_generate_random in -le2fs-uuid... no
+checking for uuid_generate_random... yes
+checking for json_dumps in -ljansson... yes
+checking jansson.h usability... yes
+checking jansson.h presence... yes
+checking for jansson.h... yes
+checking for clock_gettime in -lrt... no
+checking for xml2-config... /usr/bin/xml2-config
+checking for uriParseUriA in -luriparser... no
+checking for xsltLoadStylesheetPI in -lxslt... yes
+checking libxslt/xsltInternals.h usability... yes
+checking libxslt/xsltInternals.h presence... yes
+checking for libxslt/xsltInternals.h... yes
+checking for xsltCleanupGlobals in -lxslt... yes
+checking for libxslt/xsltInternals.h... (cached) yes
+checking xlocale.h usability... yes
+checking xlocale.h presence... yes
+checking for xlocale.h... yes
+checking winsock.h usability... no
+checking winsock.h presence... no
+checking for winsock.h... no
+checking winsock2.h usability... no
+checking winsock2.h presence... no
+checking for winsock2.h... no
+checking sys/poll.h usability... yes
+checking sys/poll.h presence... yes
+checking for sys/poll.h... yes
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+checking for an ANSI C-conforming const... yes
+checking for uid_t in sys/types.h... yes
+checking for inline... inline
+checking for long double with more range or precision than double... yes
+checking for mode_t... yes
+checking for off_t... yes
+checking for pid_t... yes
+checking for size_t... (cached) yes
+checking for struct stat.st_blksize... yes
+checking for struct ucred.uid... no
+checking for struct ucred.cr_uid... no
+checking for struct sockpeercred.uid... no
+checking for struct ifreq.ifr_ifru.ifru_hwaddr... no
+checking whether time.h and sys/time.h may both be included... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for working volatile... yes
+checking for ptrdiff_t... yes
+checking for struct stat.st_mtim... no
+checking for struct stat.st_mtimensec... no
+checking for struct stat.st_mtimespec... yes
+checking for unistd.h... (cached) yes
+checking for working chown... yes
+checking whether closedir returns void... no
+checking for error_at_line... no
+checking vfork.h usability... no
+checking vfork.h presence... no
+checking for vfork.h... no
+checking for fork... yes
+checking for vfork... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking for _LARGEFILE_SOURCE value needed for large files... no
+checking whether gcc needs -traditional... no
+checking for working memcmp... yes
+checking for stdlib.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for sys/param.h... (cached) yes
+checking for utime.h... (cached) yes
+checking for getpagesize... yes
+checking for working mmap... yes
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+checking for sys/socket.h... (cached) yes
+checking types of arguments for select... int,fd_set *,struct timeval *
+checking whether lstat correctly handles trailing slash... no
+checking whether stat accepts an empty string... no
+checking for working strcoll... yes
+checking for strftime... yes
+checking for working strnlen... yes
+checking for working strtod... yes
+checking whether utime accepts a null argument... yes
+checking for vprintf... yes
+checking for _doprnt... no
+checking for asprintf... yes
+checking for atexit... yes
+checking for closefrom... no
+checking for dup2... yes
+checking for eaccess... no
+checking for endpwent... yes
+checking for euidaccess... no
+checking for ffsll... yes
+checking for ftruncate... yes
+checking for getcwd... yes
+checking for gethostbyname... yes
+checking for gethostname... yes
+checking for getloadavg... yes
+checking for gettimeofday... yes
+checking for glob... yes
+checking for ioperm... no
+checking for inet_ntoa... yes
+checking for isascii... yes
+checking for memchr... yes
+checking for memmove... yes
+checking for memset... yes
+checking for mkdir... yes
+checking for mkdtemp... yes
+checking for munmap... yes
+checking for newlocale... yes
+checking for ppoll... no
+checking for putenv... yes
+checking for re_comp... no
+checking for regcomp... yes
+checking for select... yes
+checking for setenv... yes
+checking for socket... yes
+checking for strcasecmp... yes
+checking for strcasestr... yes
+checking for strchr... yes
+checking for strcspn... yes
+checking for strdup... yes
+checking for strerror... yes
+checking for strlcat... yes
+checking for strlcpy... yes
+checking for strncasecmp... yes
+checking for strndup... yes
+checking for strnlen... yes
+checking for strrchr... yes
+checking for strsep... yes
+checking for strspn... yes
+checking for strstr... yes
+checking for strtod... (cached) yes
+checking for strtol... yes
+checking for strtold... yes
+checking for strtoq... yes
+checking for unsetenv... yes
+checking for utime... yes
+checking for vasprintf... yes
+checking for getpeereid... yes
+checking for sysctl... yes
+checking for swapctl... no
+checking for htonll... yes
+checking for ntohll... yes
+checking for sqrt in -lm... yes
+checking for exp2... yes
+checking for log2... yes
+checking for exp10... no
+checking for log10... yes
+checking for sin... yes
+checking for cos... yes
+checking for tan... yes
+checking for asin... yes
+checking for acos... yes
+checking for atan... yes
+checking for atan2... yes
+checking for pow... yes
+checking for rint... yes
+checking for exp... yes
+checking for log... yes
+checking for remainder... yes
+checking for fmod... yes
+checking for round... yes
+checking for roundf... yes
+checking for trunc... yes
+checking for floor... yes
+checking for ceil... yes
+checking for exp2l... yes
+checking for log2l... yes
+checking for exp10l... no
+checking for log10l... yes
+checking for sinl... yes
+checking for cosl... yes
+checking for tanl... yes
+checking for asinl... yes
+checking for acosl... yes
+checking for atanl... yes
+checking for atan2l... yes
+checking for powl... yes
+checking for sqrtl... yes
+checking for rintl... yes
+checking for expl... yes
+checking for logl... yes
+checking for remainderl... yes
+checking for fmodl... yes
+checking for roundl... yes
+checking for truncl... yes
+checking for floorl... yes
+checking for ceill... yes
+checking for LLONG_MAX in limits.h... yes
+checking for timersub in time.h... yes
+checking for a version of GNU ld that supports the --dynamic-list flag... no
+checking for sys/poll.h... (cached) yes
+checking for funopen... yes
+checking for fopencookie... no
+checking for inet_aton... yes
+checking for IP_PKTINFO... yes
+checking for library containing gethostbyname_r... no
+checking for gethostbyname_r with 6 arguments... no
+checking for gethostbyname_r with 5 arguments... no
+checking byteswap.h usability... no
+checking byteswap.h presence... no
+checking for byteswap.h... no
+checking for __swap16 variant of <sys/endian.h> byteswapping macros... no
+checking for bswap16 variant of <sys/endian.h> byteswapping macros... no
+checking for locale_t in locale.h... no
+checking for locale_t in xlocale.h... yes
+checking for O_EVTONLY in fcntl.h... yes
+checking for O_SYMLINK in fcntl.h... yes
+checking for PTHREAD_RWLOCK_INITIALIZER in pthread.h... yes
+checking for PTHREAD_RWLOCK_PREFER_WRITER_NP in pthread.h... no
+checking for PTHREAD_MUTEX_RECURSIVE_NP in pthread.h... no
+checking for PTHREAD_MUTEX_ADAPTIVE_NP in pthread.h... no
+checking for pthread_spinlock_t in pthread.h... no
+checking for pthread_rwlock_timedwrlock() in pthread.h... no
+checking for working unnamed semaphores... no
+checking if PTHREAD_ONCE_INIT needs braces... no
+checking for PTHREAD_RECURSIVE_MUTEX_INITIALIZER_NP in pthread.h... no
+checking whether we can compare a mutex to its initial value... no
+checking sys/thr.h usability... no
+checking sys/thr.h presence... no
+checking for sys/thr.h... no
+checking for compiler atomic operations... yes
+checking if your system printf is NULL-safe.... (null)yes
+checking if we can increase the maximum select-able file descriptor... no
+checking if we have usable eventfd support... no
+checking for compiler 'attribute pure' support... yes
+checking for compiler 'attribute malloc' support... yes
+checking for compiler 'attribute const' support... yes
+checking for compiler 'attribute unused' support... yes
+checking for compiler 'attribute always_inline' support... yes
+checking for compiler 'attribute deprecated' support... yes
+checking for compiler 'attribute sentinel' support... yes
+checking for compiler 'attribute warn_unused_result' support... yes
+checking for compiler 'attribute may_alias' support... yes
+checking for compiler 'attribute constructor' support... yes
+checking for compiler 'attribute destructor' support... yes
+checking for compiler 'attribute noreturn' support... yes
+checking for -fsanitize=address support... yes
+checking for -fsanitize=thread support... yes
+checking for -fsanitize=leak support... no
+checking for -fsanitize=undefined support... yes
+checking for -Wdeclaration-after-statement support... yes
+checking for -Wtrampolines support... no
+checking for _FORTIFY_SOURCE support... yes
+checking for -fno-strict-overflow... yes
+checking for -Wshadow... yes
+checking for -march=native support... yes
+checking whether to use rpath... not needed
+checking for sysinfo... no
+checking for library containing res_9_ninit... -lresolv
+checking for res_ninit... yes
+checking for library containing res_9_ndestroy... none required
+checking for res_ndestroy... yes
+checking for library containing res_9_close... none required
+checking for res_close... yes
+checking for GLOB_NOMAGIC in glob.h... yes
+checking for GLOB_BRACE in glob.h... yes
+checking for RTLD_NOLOAD in dlfcn.h... yes
+checking for IP_MTU_DISCOVER in netinet/in.h... no
+checking libkern/OSAtomic.h usability... yes
+checking libkern/OSAtomic.h presence... yes
+checking for libkern/OSAtomic.h... yes
+checking size of int... 4
+checking size of long... 8
+checking size of long long... 8
+checking size of char *... 8
+checking size of long... (cached) 8
+checking size of long long... (cached) 8
+checking size of fd_set.fds_bits... (cached) 4
+checking for dladdr in dlfcn.h... yes
+checking for pkg-config... no
+checking for snd_spcm_init in -lasound... no
+checking for bfd_openr in -lbfd... no
+checking for bfd_check_format in -lbfd... no
+checking for bfd_check_format in -lbfd... (cached) no
+checking for DAHDI_RESET_COUNTERS in dahdi/user.h... no
+checking for DAHDI_DEFAULT_MTU_MRU in dahdi/user.h... no
+checking for DAHDI_CODE in dahdi/user.h... no
+checking for DAHDI_POLICY_HALF_FULL in dahdi/user.h... no
+checking for enhanced dahdi vmwi support... no
+checking if "int foo = DAHDI_ECHOCANCEL_FAX_MODE" compiles using dahdi/user.h... no
+checking for getifaddrs() support... yes
+checking for timerfd support... no
+checking for gsm_create in -lgsm... no
+checking for ILBC... no
+checking for LIBEDIT... no
+checking for iconv_open in -liconv... yes
+checking iconv.h usability... yes
+checking iconv.h presence... yes
+checking for iconv.h... yes
+checking for icaltimezone_get_utc_timezone in -lical... no
+checking for iks_start_sasl in -liksemel... no
+checking for UW IMAP Toolkit c-client library... no
+checking for system c-client library...... no
+checking for SQLConnect in -liodbc... yes
+checking sql.h usability... no
+checking sql.h presence... no
+checking for sql.h... no
+checking for inotify_init in -lc... no
+checking for jack_activate in -ljack... no
+checking for kqueue in -lc... yes
+checking for sys/event.h... (cached) yes
+checking for kevent64... yes
+checking for lt_dlinit in -lltdl... yes
+checking ltdl.h usability... yes
+checking ltdl.h presence... yes
+checking for ltdl.h... yes
+checking for ldap_initialize in -lldap... yes
+checking ldap.h usability... yes
+checking ldap.h presence... yes
+checking for ldap.h... yes
+checking for mISDN_open in -lmISDN... no
+checking for mysql_config... no
+checking for nbs_connect in -lnbs... no
+checking for neon-config... no
+checking for neon-config... no
+checking for newtBell in -lnewt... no
+checking for SQLConnect in -lodbc... no
+checking for ogg_sync_init in -logg... no
+checking for backtrace in -lexecinfo... no
+checking for backtrace in -lc... yes
+checking execinfo.h usability... yes
+checking execinfo.h presence... yes
+checking for execinfo.h... yes
+checking for ba2str in -lbluetooth... no
+checking linux/soundcard.h usability... no
+checking linux/soundcard.h presence... no
+checking for linux/soundcard.h... no
+checking sys/soundcard.h usability... no
+checking sys/soundcard.h presence... no
+checking for sys/soundcard.h... no
+checking for oss_ioctl_mixer in -lossaudio... no
+checking for pg_config... /Library/PostgreSQL/9.4//bin/pg_config
+checking for PQescapeStringConn in -lpq... yes
+checking for pg_encoding_to_char within Postgres headers... yes
+checking for PJPROJECT... no
+checking for pjsip_dlg_create_uas_and_inc_lock in -lpjsip... yes
+checking pjsip.h usability... yes
+checking pjsip.h presence... yes
+checking for pjsip.h... yes
+checking for pjsip_tsx_create_uac2 in -lpjsip... yes
+checking for pjsip.h... (cached) yes
+checking if "pjmedia_mod_offer_flag flag = PJMEDIA_SDP_NEG_ALLOW_MEDIA_CHANGE" compiles using pjmedia.h... yes
+checking for pjsip_get_dest_info in -lpjsip... yes
+checking for pjsip.h... (cached) yes
+checking for pj_ssl_cert_load_from_files2 in -lpj... no
+checking for pjsip_endpt_set_ext_resolver in -lpjsip... yes
+checking for pjsip.h... (cached) yes
+checking if "struct pjsip_tls_setting setting; int proto; proto = setting.proto;" compiles using pjsip.h... yes
+checking for pjsip_evsub_add_ref in -lpjsip... no
+checking for pjsip_inv_add_ref in -lpjsip... no
+checking for pjsip_auth_clt_deinit in -lpjsip... yes
+checking for pjsip.h... (cached) yes
+checking for pjsip_evsub_set_uas_timeout in -lpjsip... no
+checking for pjsip_tsx_layer_find_tsx2 in -lpjsip... no
+checking for PYTHONDEV... no
+checking for poptStrerror in -lpopt... no
+checking for Pa_GetDeviceCount in -lportaudio... no
+checking for pri_connected_line_update in -lpri... no
+checking for pri_setup_ack in -lpri... no
+checking for pri_persistent_layer2_option in -lpri... no
+checking for pri_date_time_send_option in -lpri... no
+checking for pri_mwi_indicate_v2 in -lpri... no
+checking for pri_display_text in -lpri... no
+checking for pri_mwi_indicate in -lpri... no
+checking for pri_mcid_enable in -lpri... no
+checking for pri_connect_ack_enable in -lpri... no
+checking for pri_aoc_events_enable in -lpri... no
+checking for pri_transfer_enable in -lpri... no
+checking for pri_cc_enable in -lpri... no
+checking for pri_hangup_fix_enable in -lpri... no
+checking for pri_sr_set_called_subaddress in -lpri... no
+checking for pri_hold_enable in -lpri... no
+checking for pri_reroute_enable in -lpri... no
+checking for pri_sr_set_keypad_digits in -lpri... no
+checking for pri_progress_with_cause in -lpri... no
+checking for pri_set_inbanddisconnect in -lpri... no
+checking for pri_maintenance_service in -lpri... no
+checking for pri_sr_set_reversecharge in -lpri... no
+checking for resample_open in -lresample... no
+checking for minimum version of SpanDSP... no
+checking for ss7_set_isup_timer in -lss7... no
+checking for openr2_chan_new in -lopenr2... no
+checking for opus_encoder_create in -lopus... no
+checking /Users/mobidev/pwlib/include/ptlib.h usability... no
+checking /Users/mobidev/pwlib/include/ptlib.h presence... no
+checking for /Users/mobidev/pwlib/include/ptlib.h... no
+checking /usr/local/include/ptlib.h usability... no
+checking /usr/local/include/ptlib.h presence... no
+checking for /usr/local/include/ptlib.h... no
+checking /usr/include/ptlib.h usability... no
+checking /usr/include/ptlib.h presence... no
+checking for /usr/include/ptlib.h... no
+checking for luaL_newstate in -llua5.2... no
+checking for luaL_newstate in -llua5.1... no
+checking for luaL_openlib in -llua... no
+checking for rc_read_config in -lfreeradius-client... no
+checking for rc_read_config in -lradiusclient-ng... no
+checking for cpg_join in -lcpg... no
+checking for corosync_cfg_state_track in -lcfg... no
+checking for speex_encode in -lspeex... yes
+checking speex/speex.h usability... no
+checking speex/speex.h presence... no
+checking for speex/speex.h... no
+checking for speex_preprocess_ctl in -lspeex... yes
+checking for speex/speex.h... (cached) no
+checking for speex_preprocess_ctl in -lspeexdsp... no
+checking for sqlite_exec in -lsqlite... no
+checking for sqlite3_open in -lsqlite3... yes
+checking sqlite3.h usability... yes
+checking sqlite3.h presence... yes
+checking for sqlite3.h... yes
+checking for crypt in -lcrypt... no
+checking for crypt... yes
+checking for crypt_r in -lcrypt... no
+checking for AES_encrypt in -lcrypto... yes
+checking openssl/aes.h usability... no
+checking openssl/aes.h presence... no
+checking for openssl/aes.h... no
+checking for srtp_init in -lsrtp... yes
+checking srtp/srtp.h usability... no
+checking srtp/srtp.h presence... no
+checking for srtp/srtp.h... no
+checking for srtp_shutdown in -lsrtp... yes
+checking for srtp/srtp.h... (cached) no
+checking for GMIME... no
+checking for GMIME... no
+checking for GMIME... no
+checking for GMIME... no
+checking for malloc in -lhoard... no
+checking for dbinit in -lsybdb... no
+checking for tone_zone_find_by_num in -ltonezone... no
+checking for tone_zone_find in -ltonezone... no
+checking for vorbis_info_init in -lvorbis... no
+checking for OV_CALLBACKS_NOCLOSE declared in vorbis/vorbisfile.h... no
+checking for vpb_open in -lvpb... no
+checking for compress in -lz... yes
+checking zlib.h usability... yes
+checking zlib.h presence... yes
+checking for zlib.h... yes
+checking linux/compiler.h usability... no
+checking linux/compiler.h presence... no
+checking for linux/compiler.h... no
+checking for linux/ixjuser.h... no
+checking for MSG_NOSIGNAL in sys/socket.h... no
+checking for SO_NOSIGPIPE in sys/socket.h... yes
+checking for sdl-config... no
+checking for IMG_Load in -lSDL_image... no
+checking for sws_getContext in -lavcodec... no
+checking linux/videodev.h usability... no
+checking linux/videodev.h presence... no
+checking for linux/videodev.h... no
+checking for XOpenDisplay in -lX11... no
+checking for XOpenDisplay in -lX11... (cached) no
+checking for /sbin/launchd... yes
+checking for GTK2... no
+checking for SYSTEMD... no
+checking for LOG_AUTH in syslog.h... yes
+checking for LOG_AUTHPRIV in syslog.h... yes
+checking for LOG_CRON in syslog.h... yes
+checking for LOG_DAEMON in syslog.h... yes
+checking for LOG_FTP in syslog.h... yes
+checking for LOG_KERN in syslog.h... yes
+checking for LOG_LPR in syslog.h... yes
+checking for LOG_MAIL in syslog.h... yes
+checking for LOG_NEWS in syslog.h... yes
+checking for LOG_SYSLOG in syslog.h... yes
+checking for LOG_UUCP in syslog.h... yes
+checking for mandatory modules:  PGSQL... ok
+configure: creating ./config.status
+config.status: creating build_tools/menuselect-deps
+config.status: creating makeopts
+config.status: creating include/asterisk/autoconfig.h
+checking build system type... x86_64-apple-darwin16.6.0
+checking host system type... x86_64-apple-darwin16.6.0
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for GNU make... make
+checking for compiler 'attribute weak_import' support... yes
+checking for compiler 'attribute weak' support... yes
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for size_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for asprintf... yes
+checking for getloadavg... yes
+checking for setenv... yes
+checking for strcasestr... yes
+checking for strndup... yes
+checking for strnlen... yes
+checking for strsep... yes
+checking for unsetenv... yes
+checking for vasprintf... yes
+checking for newtBell in -lnewt... no
+checking for initscr in -lcurses... yes
+checking curses.h usability... yes
+checking curses.h presence... yes
+checking for curses.h... yes
+checking for initscr in -lncurses... yes
+checking for curses.h... (cached) yes
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for xml2-config... /usr/bin/xml2-config
+checking for pkg-config... no
+checking for GTK2... no
+configure: creating ./config.status
+config.status: creating makeopts
+config.status: creating autoconfig.h
+configure: Menuselect build configuration successfully completed
+
+               .$$$$$$$$$$$$$$$=..      
+            .$7$7..          .7$$7:.    
+          .$$:.                 ,$7.7   
+        .$7.     7$$$$           .$$77  
+     ..$$.       $$$$$            .$$$7 
+    ..7$   .?.   $$$$$   .?.       7$$$.
+   $.$.   .$$$7. $$$$7 .7$$$.      .$$$.
+ .777.   .$$$$$$77$$$77$$$$$7.      $$$,
+ $$$~      .7$$$$$$$$$$$$$7.       .$$$.
+.$$7          .7$$$$$$$7:          ?$$$.
+$$$          ?7$$$$$$$$$$I        .$$$7 
+$$$       .7$$$$$$$$$$$$$$$$      :$$$. 
+$$$       $$$$$$7$$$$$$$$$$$$    .$$$.  
+$$$        $$$   7$$$7  .$$$    .$$$.   
+$$$$             $$$$7         .$$$.    
+7$$$7            7$$$$        7$$$      
+ $$$$$                        $$$       
+  $$$$7.                       $$  (TM)     
+   $$$$$$$.           .7$$$$$$  $$      
+     $$$$$$$$$$$$7$$$$$$$$$.$$$$$$      
+       $$$$$$$$$$$$$$$$.                
+
+WARNING: iodbc libs/headers found!
+
+  If you plan to use ODBC functionality, you should consider
+  switching to unixodbc instead.
+  See: https://issues.asterisk.org/jira/browse/ASTERISK-22459
+
+configure: Package configured for: 
+configure: OS type  : darwin16.6.0
+configure: Host CPU : x86_64
+configure: build-cpu:vendor:os: x86_64 : apple : darwin16.6.0 :
+configure: host-cpu:vendor:os: x86_64 : apple : darwin16.6.0 :
